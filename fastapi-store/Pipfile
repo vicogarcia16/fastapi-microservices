@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+requests = "*"
+redis-om = "*"
+python-dotenv = "*"
+
+[dev-packages]
+
+[scripts]
+server = "uvicorn main:app --reload --port 8001"
+
+[requires]
+python_version = "3.11"
