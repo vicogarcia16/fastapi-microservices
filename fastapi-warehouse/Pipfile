@@ -12,7 +12,7 @@ uvicorn = "*"
 [dev-packages]
 
 [scripts]
-server = "uvicorn main:app --reload"
+server = "uvicorn main:app --reload --port 8000"
 
 [requires]
 python_version = "3.11"
